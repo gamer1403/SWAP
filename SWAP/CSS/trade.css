@@ -1,0 +1,235 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: #f0f0f0;
+	padding: 8px;
+	text-align: center;
+}
+.search-bar {
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+h1 {
+	text-align: center;
+	align-items: center;
+	color: black;
+	margin-top: -150px;
+	size: 1rem;
+	text-decoration: underline aquamarine;
+}
+h2 {
+	margin-bottom: 100px;
+ 	color : white;
+	text-align: center;
+}
+p {
+	color: #3000;
+	font-size: large;
+}
+.anada {
+	text-align: center;
+}
+button {
+	color: #f0f0f0;
+	background-color: #4caf50;
+	border-right: #3000;
+
+}
+.search-bar input[type="search"] {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 14px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.search-bar i {
+	position: absolute;
+	right: 10px;
+	top: 12px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.search-bar input[type="search"] {
+	background-image: url(/images/search.png);
+	color: black;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+.search-bar input[type="search"]:hover{
+	background-image: none;
+}
+
+.logo {
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+.copyright {
+	position: absolute;
+	right: 10px;
+	top: 19px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.background {
+        background-image: linear-gradient(rgba(0, 0, 0,0.3), rgba(0, 0, 0, 0.5)), url(/images/permanent.jpg) ;
+		background-attachment: fixed;
+		background-position: center 10px;
+		color: white;
+		min-width: none;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 482px;
+		padding: 0 40px;
+		width: 93.7%;
+		margin-top: 0px;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+}
+.background .login-box {
+	width: 280px;
+	position: absolute;
+	align-items: center;
+	color: white;
+}
+.text-box {
+	width: 100%;
+	overflow: hidden;
+	font-size: 15px;
+	padding: 8px 0;
+	margin: 80px 0;
+	align-items: center;
+}
+.text-box i {
+	width: 26px;
+	float: left;
+	text-align: center;
+}
+.text-box input {
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	font-size: 22px;
+	width: 80%;
+	margin: 0 10px;
+	margin-left: 25px;
+}
+.text-box input:hover {
+	color: aquamarine;
+}
+
+
+.background a {
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+}
+.background a:hover {
+	color: aquamarine;
+}
+nav {
+	background-color: #333;
+	padding: 2px;
+    height: 52px;
+	text-align: center;
+    width: 99.7%;
+}
+i {
+    color: red;
+    margin-right: 27px;
+}
+i:hover {
+    color: aquamarine;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.images img{
+	width: 17px;
+	margin-right: 47px; 
+}
+.images img:hover {
+	color: aquamarine;
+}
+nav li {
+	font-size: medium;
+	display: inline-block;
+	margin-right: 25px;
+	margin-bottom: 13px;
+}
+nav li .active-link {
+	color: aquamarine;
+	text-decoration: aquamarine;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+nav a{
+    animation: MoveUpDown 2.5s ease-in-out infinite;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: aquamarine;
+}
+
+/* Mobile responsiveness */
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+	.search-bar {
+		width: 53%;
+        left: 15px;
+	}
+    .logo {
+       font-size: medium;
+    }
+	nav {
+		flex-direction: column;
+		width: 95%;
+		align-items: center;
+	}
+	nav li {
+		margin-bottom: 3px;
+        font-size: small;
+	}
+	main h1 {
+		font-size: large;
+	}
+	.background {
+		width: 84.958888%;
+		left: 90px;
+	}
+	.images img {
+		width: 15px;
+		margin-left: -6px;
+	}
+}

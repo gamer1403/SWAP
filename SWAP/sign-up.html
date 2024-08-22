@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/browser.jpg" type="image/png" sizes="16x16">
+	<title>Sign Up - SWAP</title>
+	<link rel="stylesheet" href="CSS/sign-up.css">
+</head>
+<body>
+	<header> <div href="sign-up.html" class="logo">
+		<a class="logoa" href="sign-up.html"> ◦•●◉🆂🆆🅰🅿◦•●◉ </a>
+    </div>
+
+		<nav>
+			<ul>
+				<li><a href="home.html">HOME</a></li>
+                <li><a href="categories.html">CATEGORIES</a></li>
+                <li><a href="feed.html">FEED</a></li>
+                <li><a href="trade.html">TRADE</a></li>
+                <li><a href="me.html">ME</a></li>
+                <li><a href="help.html">HELP</a></li>
+
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="sign-up">
+			<h2>SIGN UP</h2>
+			<form id="sign-up-form" action="#" method="post" autocomplete="on">
+				<label for="first-name">First Name:</label>
+				<input type="text" id="first-name" name="first-name"  required="" minlength="3" maxlength="15"><br><br>
+				<span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+				<label for="last-name">Last Name:</label>
+				<input type="text" id="last-name" name="last-name" required="" minlength="3" maxlength="15"><br><br>
+				<label for="email">Email Address:</label>
+				<input type="email" id="email" name="email" required="" minlength="10" maxlength="35"><br><br>
+	     		<label for="date-of-birth">  Date Of Birth:</label>
+				<input type="date"  id="date-of-birth" name="date-of-birth" required="" ><br><br>
+				<label for="number">Phone Number:</label>
+				<input type="number"  id="number" name="number" /><br><br>
+				<label for="password">Password:</label>
+				<input type="password" placeholder="NOT LESS THAN 8 DIGITS" id="password1" name="password" required="" minlength="8" maxlength="15"><br><br>
+				<label for="confirm-password">Confirm Password:</label>
+				<input type="password" id="password2" name="confirm-password" required="" minlength="8" maxlength="15"><br><br>
+				<label for="gender">Gender:</label>
+		        <select id="gender" name="gender" onchange="change_region(this.value)" class="frm-field required" required="">
+<option value="null">CONFIDENTAL</option>
+<option value="male">MALE</option>
+<option value="female">FEMALE</option>
+				</select><br><br>
+				<label for="region">Region:</label>
+		        <select id="region" name="region" onchange="change_region(this.value)" class="frm-field required" required="">
+	<div>
+					<option value="null">SELECT YOUR STATE</option>  
+					<option value="AB">ABIA</option>  
+					<option value="">ADAMAWA</option>  
+					<option value="">AKWA-IBOM</option>  
+					<option value="">ANAMBRA</option>  
+					<option value="">BAUCHI</option>  
+					<option value="">BAYELSA</option>  
+					<option value="">BENUE</option>  
+					<option value="">BORNU</option>  
+					<option value="">CROSS RIVER</option>  
+					<option value="">DELTA</option>  
+					<option value="">EBONYI</option>  
+					<option value="">EDO</option>  
+					<option value="">EKITI</option>  
+					<option value="">ENUGU</option>  
+					<option value="">GOMBE</option>  
+					<option value="">IMO</option>  
+					<option value="">JIGAWA</option>  
+					<option value="">KADUNA</option>  
+					<option value="">KANO</option>  
+					<option value="">KATSINA</option>  
+					<option value="">KEBBI</option>  
+					<option value="">KOGI</option>  
+					<option value="">KWARA</option>  
+					<option value="">LAGOS</option>  
+					<option value="">NASSARAWA</option>  
+					<option value="">NIGER</option>  
+					<option value="">OGUN</option>  
+					<option value="">ONDO</option>  
+					<option value="">OSUN</option>  
+					<option value="">OYO</option>  
+					<option value="">PLATEAU</option>  
+					<option value="">RIVERS</option>  
+					<option value="">SOKOTO</option>  
+					<option value="">TARABA</option>  
+					<option value="">YOBE</option>  
+					<option value="">ZAMFARA</option>  
+					<option value="">FCT</option>   
+				</div>
+				</select><br><br>
+				
+				<label for="city">City:</label>
+		        <select id="region" name="region" onchange="change_region(this.value)" class="frm-field required" required="">
+<option value="null">WE ARE CURRENTLY WORKING ON THIS.....</option>
+				</select>
+
+
+
+				<article class="terms">
+	
+				<input type="checkbox" id="terms" name="TERMS AND CONDITIONS" required="">
+				<a href="terms.html">TERMS AND CONDITIONS</a>
+
+
+				</article>
+				<input id="submit-btn" type="submit" value="SIGN-UP" >
+			
+				
+				</form><main>
+
+				</main>
+				<a href="me.html"><p>ALREADY HAVE AN ACCOUNT? SIGN IN</p></a>
+					
+
+				<script>
+					window.onload = function () {
+						document.getElementById("password1").onchange = validatePassword;
+						document.getElementById("password2").onchange = validatePassword;
+					}
+			
+					function validatePassword() {
+						var pass2 = document.getElementById("password2").value;
+						var pass1 = document.getElementById("password1").value;
+						if (pass1 != pass2)
+							document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+						else
+							document.getElementById("password2").setCustomValidity('');
+						//empty string means no validation error
+					}
+				</script>
+
+</body>
+</html>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 SWAP</p>
+	</footer>
+	<script src="JAVASCRIPT/sign-up.js"></script>
+</body>
+</html>

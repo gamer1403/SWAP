@@ -1,0 +1,229 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: #f0f0f0;
+	padding: 8px;
+	text-align: center;
+}
+.search-bar {
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+h1 {
+	color: black;
+	size: 2rem;
+	margin-bottom: 250px;
+	text-decoration: underline aquamarine;
+}
+h2 {
+ 	color :aquamarine;
+	text-align: center;
+}
+p {
+	color: #3000;
+	font-size: larger;
+}
+.search-bar input[type="search"] {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 14px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.search-bar i {
+	position: absolute;
+	right: 10px;
+	top: 12px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.search-bar input[type="search"] {
+	background-image: url(/images/search.png);
+	color: black;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+.search-bar input[type="search"]:hover{
+	background-image: none;
+}
+
+.logo {
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+.copyright {
+	position: absolute;
+	right: 10px;
+	top: 18px;
+	font-size: 16px;
+	cursor: pointer;
+}
+::-webkit-input-placeholder {
+	color: #000;
+	margin-left: 2px;
+	font-size: small;
+}
+.background {
+        background-image: linear-gradient(rgba(0, 0, 0,0.3), rgba(0, 0, 0, 0.5)), url(/images/permanent.jpg) ;
+		background-attachment: fixed;
+		background-position: center 10px;
+		color: white;
+		min-width: none;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 452.7px;
+		padding: 0 40px;
+		width: 93.7%;
+		margin-top: 0px;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+}
+.background .login-box {
+	width: 280px;
+	position: absolute;
+	align-items: center;
+	color: white;
+}
+.text-box {
+	width: 100%;
+	overflow: hidden;
+	font-size: 15px;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px solid aquamarine;
+	align-items: center;
+}
+.text-box i {
+	width: 26px;
+	float: left;
+	text-align: center;
+}
+.text-box input{
+	border: none;
+	outline: none;
+	background: none;
+	color: aquamarine;
+	font-size: 12px;
+	float: left;
+	width: 80%;
+	margin: 0 10px;
+    pad: 10px 20px;
+}
+.btn{
+    background-color: #333;
+    color: #fff;
+	padding: 10px 20px;
+	border: none;
+    font-size: large;
+	border-radius: 5px;
+	cursor: pointer;
+    width: 100%;
+	cursor: pointer;
+
+}
+
+.btn:hover{
+	color: #000;
+	background-color: aquamarine;
+}
+
+.background a {
+	color: white;
+	margin-bottom: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+.background a:hover {
+	color: aquamarine;
+}
+nav {
+	background-color: #333;
+	padding: 4px;
+    height: 44px;
+	text-align: center;
+    width: 99.35% ;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.images i{
+	width: 20px;
+	margin-right: 135px;
+    color: red;
+}
+.images i:hover{
+    color: aquamarine;
+}
+nav li {
+	display: inline-block;
+	margin-right: 25px;
+	margin-bottom: -30px;
+}
+nav li .active-link {
+	color: aquamarine;
+	text-decoration: aquamarine;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+nav a{
+    animation: MoveUpDown 2.5s ease-in-out infinite;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+nav a:hover {
+    color: aquamarine;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+	.search-bar {
+		width: 53%;
+        left: 15px;
+	}
+    .logo {
+       font-size: medium;
+    }
+	nav {
+		flex-direction: column;
+		width: 95%;
+		align-items: center;
+	}
+	nav li {
+		margin-bottom: 3px;
+        font-size: small;
+	}
+	main h1 {
+		font-size: large;
+	}
+	.background {
+		width: 84.958888%;
+		left: 90px;
+	}
+	.images img {
+		width: 15px;
+		margin-left: -6px;
+	}
+}

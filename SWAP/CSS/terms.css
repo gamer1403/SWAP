@@ -1,0 +1,106 @@
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    z-index: 1000;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+section {
+    width: 90%;
+    background-color: aliceblue;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: larger;
+	color: #333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+    display: flex;
+    text-align: center;
+    margin-left: 400px;
+}
+
+h3 {
+    font-size: medium;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+}
+
+.lies {
+    text-align: start;
+    font-size: 15.7px;
+    margin-top: -15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+li {
+	padding: 10px;
+}
+
+footer {
+	background-color: #333;
+	padding: 0.5px;
+	text-align: center;
+	color: #fff;
+}
+
+.sign {
+    position: absolute;
+    left: 10px;
+    margin-top: 18px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
