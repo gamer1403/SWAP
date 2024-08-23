@@ -43,7 +43,7 @@ p {
 	cursor: pointer;
 }
 .search-bar input[type="search"] {
-	background-image: url(../images/search.png);
+	background-image: url('./images/search.png);
 	color: black;
 	background-position: left;
 	background-repeat: no-repeat;
