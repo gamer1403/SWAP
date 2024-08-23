@@ -43,7 +43,7 @@ p {
 	cursor: pointer;
 }
 .search-bar input[type="search"] {
-	background-image: url(/images/search.png);
+	background-image: url(../images/search.png);
 	color: black;
 	background-position: left;
 	background-repeat: no-repeat;
@@ -67,7 +67,7 @@ p {
 	cursor: pointer;
 }
 .background {
-        background-image: linear-gradient(rgba(0, 0, 0,0.3), rgba(0, 0, 0, 0.5)), url(/images/permanent.jpg) ;
+        background-image: linear-gradient(rgba(0, 0, 0,0.3), rgba(0, 0, 0, 0.5)), url(../images/permanent.jpg) ;
 		background-attachment: fixed;
 		background-position: center 10px;
 		color: white;
